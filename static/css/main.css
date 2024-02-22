@@ -1,0 +1,48 @@
+body {
+    background-color: rgb(8, 61, 51);
+}
+
+/* HEADER */
+
+header {
+     position: sticky;
+     top: 0;
+     z-index: 1000;
+     background: #fff;
+     box-shadow: 0 5px 25px rgba(53, 42, 42, 0.15)
+}
+
+.header__img {
+    height: 84px;
+    width: 84px;
+}
+
+body {
+    margin: 0;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+.page {
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.content {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 40px 20px;
+
+    flex: 1 1 auto;
+}
+
+header, footer {
+    padding: 20px;
+    background-color: #022b26;
+}

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="{{  url_for('static', filename='css/main.css') }}">
+
+    <title>
+        About us
+    </title>
+</head>
+<body>
+    <header class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 border-bottom">
+        <div class="col-md-3 mb-2 mb-md-0">
+            <a href="/" class="d-inline-flex link-body-emphasis text-decoration-none">
+            <img class="header__img"src="{{ url_for('static', filename='image/GSlogo.jpg') }}" alt="logo">
+            <svg class="bi" width="40" height="32" role="img" aria-label="Bootstrap"><use xlink:href="#bootstrap"></use></svg>
+            </a>
+        </div>
+    <h1>
+        About us
+    </h1>
+        <h2>
+                Today, more and more attention is being paid to developing
+            machine learning technologies and neural networks. There are more and more tools that make it easier
+            to work in different fields. In particular, Internet resources are being created that allow people
+            to use neural networks. Such resources include sites where the neural network 
+            communicates with the user, outputs an image according to the user's entered query. 
+            There are also tools that serve as auxiliary/entertainment
+            to meet household needs. They are also highly sought after and popular. 
+            Another criterion of relevance is the fact that
+            streaming services such as Yandex Music,
+            Spotify, Apple Music, etc. are currently in high demand. The result of the product will be a playlist
+            that users can conveniently use with the help of Yandex Music
+        </h2>
+        <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+            <p class="col-md-4 mb-0 text-body-secondary">© 2024 PhotoMusic </p>
+                
+            <a href="/" class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
+                <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"></use></svg>
+            </a>
+                
+            <ul class="nav col-md-4 justify-content-end">
+                <li class="nav-item"><a href="{{ url_for('upload_file')}}" class="nav-link px-2 text-body-secondary">Home</a></li>
+                <li class="nav-item"><a href="{{ url_for('about')}}" class="nav-link px-2 text-body-secondary">About</a></li>
+            </ul>
+</body>
+</html>
